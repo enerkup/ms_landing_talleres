@@ -59,7 +59,7 @@ addCart =() => {
     if (req.status === 200) {
       // Resolve the promise with the response text
 
-      window.location.href = 'https://www.manualidadeselsultan.com/carrito/';
+      window.location.href = 'https://www.manualidadeselsultan.com/finalizar-compra/'; 
 
                 }
     else {
