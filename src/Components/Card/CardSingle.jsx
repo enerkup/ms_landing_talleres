@@ -24,7 +24,7 @@ componentDidMount() {
         // Resolve the promise with the response text
         var data = JSON.parse(req.response);
 
-        console.table(data);
+        //console.table(data);
 
         this.setState({ 
                       id: data.id,
@@ -52,6 +52,8 @@ addCart =() => {
   req.open('GET', `/?add-to-cart=${this.state.id}`);
 
   req.onload = () => { 
+
+    document.getElementById("por_agregar").innerHTML = '<i className="fas fa-spinner fa-spin"></i> &nbsp; <span>Agregando</span>'; 
       
     if (req.status === 200) {
       // Resolve the promise with the response text
@@ -88,7 +90,11 @@ render(){
 
             <p> <span>${this.state.regular_price}</span> ${this.state.price}</p>
             <button onClick={this.addCart}>
-              <i className="fas fa-shopping-cart"></i> &nbsp; <span>Agregar</span>
+
+              <div id="por_agregar">
+                <i className="fas fa-shopping-cart"></i> &nbsp; <span>Agregar</span>
+              </div>                                    
+
             </button>
           </div>
         </div>
