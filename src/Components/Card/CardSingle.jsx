@@ -47,14 +47,15 @@ componentDidMount() {
 
 addCart =() => {
   //https://www.manualidadeselsultan.com/?add-to-cart=11646&variation_id=11648&quantity=3
-  
+
+  document.getElementById("por_agregar").innerHTML = '<i class="fas fa-spinner fa-spin"></i> &nbsp; <span>Agregando</span>'; 
+      
   var req = new XMLHttpRequest();
   req.open('GET', `/?add-to-cart=${this.state.id}`);
 
   req.onload = () => { 
 
-    document.getElementById("por_agregar").innerHTML = '<i className="fas fa-spinner fa-spin"></i> &nbsp; <span>Agregando</span>'; 
-      
+
     if (req.status === 200) {
       // Resolve the promise with the response text
 
