@@ -52,9 +52,9 @@ addCart =() => {
   req.open('GET', `/?add-to-cart=${this.state.id}`);
   req.send();  
 
-  alert("Producto Agregado");
-  window.location.reload(false);
+  alert("Producto Agregado");  
 
+  window.location.href = 'https://www.manualidadeselsultan.com/carrito/';
 
 } 
 
