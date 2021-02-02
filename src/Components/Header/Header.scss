@@ -1,0 +1,121 @@
+$height: 80px;
+
+@keyframes rotation { 
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+
+header {
+    .home {
+        height: $height;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &__logo {
+            width: 283px;
+        }
+
+        webkit-box-shadow: -6px 18px 17px -14px rgba(0,0,0,.31);
+        -moz-box-shadow: -6px 18px 17px -14px rgba(0,0,0,.31);
+        box-shadow: -6px 18px 17px -14px rgba(0,0,0,.31);
+
+    }
+    .itemsCart {
+        font-size: 1.3em;
+        padding: 20px 15px;
+        position: relative;
+        @media(max-width: 767px) {
+            position: static;
+        }
+        &__pagar {
+            position: absolute;
+            background: orange;
+            color: white;
+            right: 0;
+            margin-top: 50px;
+            padding: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &__cart {
+            background: #2b2e83;
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.slides {
+    &__animated {
+
+        margin-top: $height;
+
+        background-size: cover;
+        background-position: bottom;
+        position: relative;
+        overflow: hidden;
+      
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+
+        text-align: center;
+       // background-image: url('./bner_micro.jpg');
+        img {
+            display: inline-block;
+        }
+        &__sa0 {
+            position: absolute;
+            right: -400px;
+            opacity: 0.3;
+            img {
+              animation: rotation 120s infinite linear;
+            }
+        }
+        &__sa1 {
+            position: absolute;
+            width: 500px;
+            right: calc(50% - #{(500 / 2)}px);
+            bottom: 10px;
+            @media(max-width: 767px) {
+                width: 100%;
+                right: initial;
+            }
+          }
+        &__sa2 {
+            position: absolute;
+            left: 300px;
+            top: 30%;
+            text-align: justify;
+            width: 420px;
+            @media(max-width: 767px) {
+                width: 100%;
+                top: initial;
+                left: initial;
+            }
+            h2 {
+                font-size: 2em;
+                color: cadetblue;
+                line-height: 1.3em;
+                background: #ffffff80;
+                padding: 10px;
+            }
+        }
+
+    }
+
+}
+
+
+

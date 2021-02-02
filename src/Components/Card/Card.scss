@@ -1,0 +1,97 @@
+.card {
+  border: 1px solid gainsboro;
+  margin-bottom: 30px;
+  @media(max-width: 767px) {
+    height: initial;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  &__image {
+    width: 100%;
+    border: 5px solid whitesmoke;
+    position: relative;
+    left: -50px;
+    top: 25px;
+    @media(max-width: 767px) {
+      position: initial;
+      width: 100%;
+    }
+  }
+
+  &__version {
+    button {
+      border: 1px solid gainsboro;
+      background-color: white;
+      margin-right: 5px;
+      font-size: 1.1em;
+      padding: 7px;
+    }
+    button.selected {
+      border: 2px solid cadetblue;
+      padding: 7px 8px;
+      font-weight: bold;
+      color: midnightblue;
+    }
+  }
+  &__acart {
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 30px);
+    @media(max-width: 767px) {
+      position: initial;
+    }
+    button {
+      border: none;
+      height: 60px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #2b2e83;
+      padding: 0 20px;
+      border-top-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+    p { 
+      width: 8.5em;
+      border-radius: 5px;
+      border: none;
+      text-align: center;
+      margin: 0;
+      background: aquamarine;
+      font-size: 1.4em;
+      position: absolute;
+      top: calc(-100% - 55px);
+      right: -20px;
+      padding: 13px;
+      span { 
+        text-decoration: line-through;
+        color: lightcoral;
+      }
+      @media(max-width: 768px) {
+        position: initial;
+        width: 100%;
+        border-radius: initial;
+        background: gold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 3em;
+      }      
+    }
+  }
+
+  &__info {
+    ul {
+      @media(min-width: 768px) {
+        padding: 0px;
+        margin:0px;
+      }
+    }
+  }
+}
+
