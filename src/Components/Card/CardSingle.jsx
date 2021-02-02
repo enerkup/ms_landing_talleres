@@ -50,11 +50,21 @@ addCart =() => {
   
   var req = new XMLHttpRequest();
   req.open('GET', `/?add-to-cart=${this.state.id}`);
-  req.send();  
 
-  alert("Producto Agregado");  
+  req.onload = () => { 
+      
+    if (req.status === 200) {
+      // Resolve the promise with the response text
 
-  window.location.href = 'https://www.manualidadeselsultan.com/carrito/';
+      window.location.href = 'https://www.manualidadeselsultan.com/carrito/';
+
+                }
+    else {
+     alert("Error al agregar producto!")
+    }
+  };
+
+  req.send();
 
 } 
 
