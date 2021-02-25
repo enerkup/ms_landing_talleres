@@ -3,25 +3,103 @@ import ReactDOM from 'react-dom';
 import './Bootstrap/css/bootstrap.css'
 import './index.scss';
 
-import CardSingle from './Components/Card/CardSingle';
 import Card from './Components/Card/Card';
+import Cards from './Components/Card/Cards';
 import Header from './Components/Header/Header';
 import Approved from './Components/Approved/Approved';
 
 import * as serviceWorker from './serviceWorker';
+import Newsletter from './Components/Newsletter/Newsletter';
+
+
+class IndexHome extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {    };
+  }
+
+  componentDidMount() { 
+
+    new Promise((resolve, reject) => { 
+  
+      var req = new XMLHttpRequest();
+  
+      req.open('GET', `https://www.blanya.com/api_v2/landing.php?id=12715`); 
+  
+      req.onload = () => { 
+        
+        if (req.status === 200) {
+          // Resolve the promise with the response text
+          var data = JSON.parse(req.response);
+  
+          //console.table(data);
+  
+          this.setState({ 
+                        id: data.id,
+                        titulo: data.title,
+                        lista: data.description,
+                        image_slide: data.images[1].src,
+                        image_product: data.images[0].src,
+                        regular_price : data.regular_price, 
+                        price: data.price
+                      });
+                    }
+        else {
+          reject(Error(req.statusText));
+        }
+      };
+  
+      req.send();
+    });
+  }
+
+   
+  render(){
+    return (
+      <section> 
+      <Header slide={this.state.image_slide}/>
+      <Approved />
+      <div className="container">
+        <Card data={this.state}/>
+      </div>
+      </section>
+    );
+
+    }
+}
+
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Approved />
-    <div className="container">
-      
-      <CardSingle producto={12431} filter={'single'}/>
-      
-    </div>
 
-    
+    <IndexHome/>
+
+    <footer>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-sm-9"> 
+            <h2>¡Cupos limitados, inscríbete Ya!  </h2>
+            <h4>El precio del taller incluye todo el material para la elaboración de la caja.  Envio gratuito a todo Mexico.</h4>
+            <h4>¡No hay excusas, compra ahora!</h4>
+            <hr></hr>
+          </div>
+          <div className="col-xs-12 col-sm-3"> 
+            <Newsletter/>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+
 
 {/*
     <div className="container images_middle">
@@ -49,25 +127,6 @@ ReactDOM.render(
     </div>
 */}
 
-    <footer>
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12"> 
-            <h2>¡Cupos limitados, inscríbete Ya!  </h2>
-            <h4>El precio del taller incluye todo el material para la elaboración de la caja. Envio gratuito a todo Mexico.</h4>
-            <h4>¡No hay excusas, compra ahora!</h4>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    
-
-
-
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
 //<Card producto={11646} filter={'variants'} activeIndex={'125-ml'}/>
 //<CardSingle producto={11657} filter={'single'}/>

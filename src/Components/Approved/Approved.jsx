@@ -12,13 +12,15 @@ render(){
                 <div className="col-xs-12">
                     <div className="carousel">
                         <div>
-                            <h4>IMPARTIDO POR LA MESTRA JOSSY</h4>
-                            <h3> Vamos a decorar juntos este <strong> ¡lindo Reloj en Collage! </strong> Te enseñamos cada detalle. </h3>                                                           
+                            <h3>IMPARTIDO POR LA MESTRA JOSSY</h3>
+                            <h4>Aprende a utilizar los esténciles para crear efectos dimensionales, luz y sombra.</h4>
+                            <h4> <strong> Te enseñamos cada detalle. </strong> </h4>                                                           
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div> 
+        {/* 
         <div className="container">
             <div className="row">
                 <div className="col-xs-12 text-center">
@@ -27,7 +29,8 @@ render(){
                     <br/>                                    
                 </div>
             </div>
-        </div>  
+        </div>
+        */}  
     </section>
   );
 }

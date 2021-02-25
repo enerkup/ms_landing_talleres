@@ -61,7 +61,7 @@ class Header extends React.Component {
           </div>
           <div className="container slides">
             <div className="row slides__animated">
-              <img className="img-responsive" src="https:\/\/www.manualidadeselsultan.com\/wp-content\/uploads\/2021\/02\/BannerLanding_opt.jpg" alt=""/>
+              <img className="img-responsive" src={this.props.slide} alt=""/>
               {/*
               <div className="slides__animated__sa0">
                 <img src={waves} alt=""/>
