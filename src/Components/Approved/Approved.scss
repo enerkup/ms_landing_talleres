@@ -31,7 +31,7 @@
         }
         }
         h3 {          
-          color: blueviolet;
+          color:black;
           margin: 0px;
         }
         h4 {
@@ -53,7 +53,7 @@
 }
 
 footer {
-  background-image: linear-gradient(130deg,#164b8c 25%,#16318c 100%);
+  background-color: #2b2e83;
   margin-top: 40px;  
   color: white;  
   padding-top: 60px;
@@ -73,7 +73,8 @@ footer {
 
 
 .video_space {
-  background-color: black;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
   padding-top: 20px;
   padding-bottom: 20px;
 }

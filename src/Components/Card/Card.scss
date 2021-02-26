@@ -1,5 +1,6 @@
 .card {
   border: 1px solid gainsboro;
+  border-top: none;
   margin-bottom: 30px;
   @media(max-width: 767px) {
     height: initial;

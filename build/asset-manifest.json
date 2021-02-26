@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.ca509338.chunk.css",
+    "main.css": "./static/css/main.5cfe14b6.chunk.css",
     "main.js": "./static/js/main.09d7311b.chunk.js",
     "main.js.map": "./static/js/main.09d7311b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.0fcf83b3.js",
@@ -8,9 +8,9 @@
     "static/js/2.56c5ceaa.chunk.js": "./static/js/2.56c5ceaa.chunk.js",
     "static/js/2.56c5ceaa.chunk.js.map": "./static/js/2.56c5ceaa.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.381f17051949f61b3a5e9e937af7b51d.js": "./precache-manifest.381f17051949f61b3a5e9e937af7b51d.js",
+    "precache-manifest.2b4a3a0649cf762db0b2bd839b4f2b93.js": "./precache-manifest.2b4a3a0649cf762db0b2bd839b4f2b93.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.ca509338.chunk.css.map": "./static/css/main.ca509338.chunk.css.map",
+    "static/css/main.5cfe14b6.chunk.css.map": "./static/css/main.5cfe14b6.chunk.css.map",
     "static/js/2.56c5ceaa.chunk.js.LICENSE.txt": "./static/js/2.56c5ceaa.chunk.js.LICENSE.txt",
     "static/media/bootstrap.css": "./static/media/glyphicons-halflings-regular.fa277232.woff",
     "static/media/logo_elsultan.png": "./static/media/logo_elsultan.29a2277c.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.0fcf83b3.js",
     "static/js/2.56c5ceaa.chunk.js",
-    "static/css/main.ca509338.chunk.css",
+    "static/css/main.5cfe14b6.chunk.css",
     "static/js/main.09d7311b.chunk.js"
   ]
 }
