@@ -82,7 +82,7 @@ ReactDOM.render(
         <div className="row">
           <div className="col-xs-12 col-sm-9"> 
             <h2>¡Cupos limitados, inscríbete Ya!  </h2>
-            <h4>El precio del taller incluye todo el material para la elaboración de la caja.  Envio gratuito a todo Mexico.</h4>
+            <h4>El precio del taller incluye todo el material para la elaboración del retablo.  Envio gratuito a todo Mexico.</h4>
             <h4>¡No hay excusas, compra ahora!</h4>
             <hr></hr>
           </div>
