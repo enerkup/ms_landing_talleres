@@ -22,9 +22,9 @@ render(){
         </div> 
         
         <div className="container-fluid video_space">
-            <div className="row">
+            <div className="row"> 
                 <div className="col-xs-12 text-center">
-                    <h3>25 y 26 de marzo de 4:00 a 6:30 <hr/>  </h3>
+                    <h3>25 y 26 de marzo de 4:00 p.m a 6:30 p.m <hr/>  </h3>
                 </div>
             </div>
             <div className="row">

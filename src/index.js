@@ -4,12 +4,12 @@ import './Bootstrap/css/bootstrap.css'
 import './index.scss';
 
 import Card from './Components/Card/Card';
-import Cards from './Components/Card/Cards';
 import Header from './Components/Header/Header';
 import Approved from './Components/Approved/Approved';
 
 import * as serviceWorker from './serviceWorker';
 import Newsletter from './Components/Newsletter/Newsletter';
+import Contador from './Components/Contador/Contador';
 
 
 class IndexHome extends React.Component {
@@ -57,12 +57,13 @@ class IndexHome extends React.Component {
    
   render(){
     return (
-      <section> 
+      <section>       
       <Header slide={this.state.image_slide}/>
       <Approved />
       <div className="container">
         <Card data={this.state}/>
       </div>
+      <Contador/>
       </section>
     );
 
