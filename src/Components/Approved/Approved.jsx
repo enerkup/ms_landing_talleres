@@ -14,7 +14,7 @@ render(){
                         <div>
                             <h3>IMPARTIDO POR LA MAESTRA ESPE</h3>
                             <h4>Aprende a utilizar los esténciles para crear efectos dimensionales, luz y sombra.</h4>
-                            <h4> <strong> Te enseñamos cada detalle. </strong> </h4>                                                           
+                            <h4> <strong> Te enseñamos cada detalle. En vivo, vía zoom.</strong> </h4>                                                           
                         </div>
                     </div>
                 </div>
