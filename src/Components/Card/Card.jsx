@@ -34,6 +34,8 @@ addCart =() => {
 
 
 render(){
+
+  if(this.props.data.stock >= 1) {  var btn_shop = `Agregar`;  } else { var btn_shop = `Agotado`; }
   return (
       <div className="row card">
         <div className="col-xs-12 col-sm-4">
@@ -53,9 +55,9 @@ render(){
             <p> <span>${this.props.data.regular_price}</span> ${this.props.data.price}</p>
             <button onClick={this.addCart}>
 
-              <div id="por_agregar">
-                <i className="fas fa-shopping-cart"></i> &nbsp; <span>Agregar</span>
-              </div>                                    
+              <div id="por_agregar">              
+                <i className="fas fa-shopping-cart"></i> &nbsp; {btn_shop}                                                                
+              </div>                                                
 
             </button>
           </div>

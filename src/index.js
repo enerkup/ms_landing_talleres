@@ -42,7 +42,8 @@ class IndexHome extends React.Component {
                         image_slide: data.images[1].src,
                         image_product: data.images[0].src,
                         regular_price : data.regular_price, 
-                        price: data.price
+                        price: data.price,
+                        stock: data.stock_quantity
                       });
                     }
         else {
