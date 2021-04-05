@@ -52,7 +52,7 @@ render(){
   
           <div className="card__acart">
 
-            <p> <span>${this.props.data.regular_price}</span> ${this.props.data.price}</p>
+            <p>  ${this.props.data.price}</p>
             <button onClick={this.addCart}>
 
               <div id="por_agregar">              
