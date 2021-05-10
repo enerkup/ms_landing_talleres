@@ -12,8 +12,8 @@ render(){
                 <div className="col-xs-12">
                     <div className="carousel">
                         <div>
-                            <h3>IMPARTIDO POR LA MAESTRA JOSSY</h3>
-                            <h4>Aprende a integrar colores y texturas. Formando un candelabro tipo proyector.</h4>
+                            <h3>IMPARTIDO POR LA MAESTRA ESPE</h3>
+                            <h4>Aprende a crear esta impresionante mandala con la técnica de decoupage y esténcil.</h4>
                             <h4> <strong> Te enseñamos cada detalle.</strong> </h4>
                                                                                        
                         </div>
@@ -25,7 +25,7 @@ render(){
         <div className="container-fluid video_space">
             <div className="row"> 
                 <div className="col-xs-12 text-center">
-                    <h3> 29 y 30 de abril de 4:00 p.m a 6:30 p.m <hr/>  </h3>
+                    <h3> 10 y 11 de junio de 4:00 p.m a 6:30 p.m <hr/>  </h3>
                 </div>
             </div>
             <div className="row">
