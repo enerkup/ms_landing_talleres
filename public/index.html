@@ -70,19 +70,10 @@
       $('.loop').owlCarousel({
         center: true,
         items: 1,
+        autoplay:true,
         loop: true,
         margin: 10,
-        responsive: {
-          600: {
-            items: 4
-          }
-        }
-      });
-      $('.nonloop').owlCarousel({
-        center: true,
-        items: 1,
-        loop: true,
-        margin: 10,
+        autoplayTimeout:3000,
         responsive: {
           600: {
             items: 4
