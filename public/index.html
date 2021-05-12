@@ -28,6 +28,9 @@
     <meta name="twitter:description" content="Inscríbete a nuestro próximo Taller!">
     <meta name="twitter:image" content="https://manualidadeselsultan.com/zoom/social.png">
 
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
@@ -58,6 +61,36 @@
     gtag('config', 'UA-173302957-2');
   </script>
 
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>  
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>  
+
+
+  <script>
+    jQuery(document).ready(function($) {
+      $('.loop').owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        margin: 10,
+        responsive: {
+          600: {
+            items: 4
+          }
+        }
+      });
+      $('.nonloop').owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        margin: 10,
+        responsive: {
+          600: {
+            items: 4
+          }
+        }
+      });
+    });
+  </script>
 
   <!-- Facebook Pixel Code -->
   <script>
