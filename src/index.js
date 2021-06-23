@@ -25,7 +25,7 @@ class IndexHome extends React.Component {
   
       var req = new XMLHttpRequest();
   
-      req.open('GET', `https://www.blanya.com/api_v2/landing.php?id=12888`); 
+      req.open('GET', `https://www.blanya.com/api_v2/landing.php?id=12995`); 
   
       req.onload = () => { 
         
@@ -84,7 +84,7 @@ ReactDOM.render(
         <div className="row">
           <div className="col-xs-12 col-sm-9"> 
             <h2>¡Cupos limitados, inscríbete Ya!  </h2>
-            <h4>El precio del taller incluye todo el material para la elaboración de este Mandala.</h4>
+            <h4>El precio del taller incluye todo el material para la elaboración.</h4>
             <h4> <i>Envio gratuito a todo Mexico.</i> ¡No hay excusas, compra ahora!</h4>
             <hr></hr>
           </div>
