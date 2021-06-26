@@ -17,7 +17,7 @@ render(){
                             <h3>Vamos a crear este portaretrato lleno de color y texturas para esas fotos que te encantan</h3>
                             <h5>Súmate a esta experiencia creativa con la maestra Jossy y aprende  a combinar técnicas tridimensionales, fluido del color y transferencia. 
                                 <br/>
-                                En un proyecto que puedes usar para tus fotografias favoritas</h5>                                                                                       
+                                En un proyecto que puedes usar para tus fotografias favoritas.</h5>                                                                                       
                         </div>
                         </div>
                     </div>
